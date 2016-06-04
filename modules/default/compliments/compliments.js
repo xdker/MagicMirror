@@ -13,19 +13,22 @@ Module.register("compliments",{
 	defaults: {
 		compliments: {
 			morning: [
-				"Good morning, handsome!",
-				"Enjoy your day!",
-				"How was your sleep?"
+				"早上好啊,亲爱的主淫！ ",
+				"起得真早啊！",
+				"真勤奋，又去学习去啦！",
+				"卧槽，又帅了！"，
+				"今天天气貌似不错哈！"
 			],
 			afternoon: [
-				"Hello, beauty!",
-				"You look sexy!",
-				"Looking good today!"
+				"中午好啊，亲爱的主人！",
+				"我主人是学霸！",
+				"Good Good Study!",
+				"Day Day Up！"
 			],
 			evening: [
-				"Wow, you look hot!",
-				"You look nice!",
-				"Hi, sexy!"
+				"主人，您又去学习啦！",
+				"爱学习的人，真他妈帅！",
+				"晚上好啊，亲爱的主淫！"
 			]
 		},
 		updateInterval: 30000,
