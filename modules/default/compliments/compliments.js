@@ -13,10 +13,10 @@ Module.register("compliments",{
 	defaults: {
 		compliments: {
 			morning: [
-				"早上好啊,亲爱的主淫！ ",
+				"早上好啊,亲爱的小主！",
 				"起得真早啊！",
 				"真勤奋，又去学习去啦！",
-				"卧槽，又帅了！"，
+				"卧槽，又帅了！",
 				"今天天气貌似不错哈！"
 			],
 			afternoon: [
