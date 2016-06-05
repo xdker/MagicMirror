@@ -33,7 +33,10 @@ Execute the following command on your Raspberry Pi to install MagicMirror²:
 ````
 curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh | bash
 ````
-
+我的
+````
+curl -sL https://raw.githubusercontent.com/xdker/MagicMirror/master/installers/raspberry.sh | bash
+````
 #### Manual Installation
 
 1. Download and install the latest Node.js version.
