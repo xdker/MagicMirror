@@ -59,11 +59,29 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "北京时间",
+						title: "FT中文网",
 						url: "http://www.ftchinese.com/rss/news",
-						url: "http://www.geekpark.net/rss",
+					},
+					{
+						title: "纽约时报",
 						url: "http://cn.nytimes.com/rss.html",
-					}
+					},	
+					{
+						title: "BBC",
+						url: "http://www.bbc.com/zhongwen/simp/index.xml",
+					},
+					{
+						title: "知乎",
+						url: "http://www.zhihu.com/rss",
+					},
+					{
+						title: "知乎日报",
+						url: "http://feeds.feedburner.com/zhihu-daily",
+					},	
+					{
+						title: "极客公园",
+						url: "http://www.geekpark.net/rss",
+					},	
 				],
 				showSourceTitle: true,
 				showPublishDate: true
