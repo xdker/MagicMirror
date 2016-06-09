@@ -12,9 +12,16 @@ var config = {
 	units: 'metric',
 
 	modules: [
-		{
-			module: 'alert', 
-		},
+		 {
+        module: 'alert',
+        config: {
+            // The config property is optional.
+            // See 'Configuration options' for more information. 
+			welcome_message:'啦啦啦，我来了！',
+			position: 'center',
+			effect:'flip',
+        }
+    },
 		{
 			module: 'clock',
 			position: 'top_left'
@@ -27,9 +34,9 @@ var config = {
 				calendars: [
 					{
 						symbol: 'calendar-check-o ',
-						url: 'http://cdn.dker.org/My.ics'
-					}
-				]
+						url: 'http://cdn.dker.org/0.ics',
+}
+				] 
 			}
 		},
 		{
@@ -87,6 +94,22 @@ var config = {
 				showPublishDate: true
 			}
 		},
+		{
+			module: 'mmm-systemtemperature',
+			position: 'top_center', // This can be any of the regions.
+			classes: 'small dimmed', // Add your own styling. Optional.
+			config: {
+			    // See 'Configuration options' for more information.
+			}
+		},
+		{
+			module: 'airquality',
+			position: 'top_center', // you may choose any location
+			config: {
+			  location: 'xian', // the location to check the index for
+			lang:'cn'
+			}
+		},	
 	]
 
 };
