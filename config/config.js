@@ -12,20 +12,23 @@ var config = {
 	units: 'metric',
 
 	modules: [
+	//启动提示模块
 		 {
         module: 'alert',
         config: {
             // The config property is optional.
             // See 'Configuration options' for more information. 
-			welcome_message:'啦啦啦，我来了！',
-			position: 'center',
-			effect:'flip',
+			//welcome_message:'啦啦啦，我来了！',
+			//position: 'center',
+			//effect:'flip',
         }
     },
+	//时钟模块
 		{
 			module: 'clock',
 			position: 'top_left'
 		},
+		//日历模块
 		{
 			module: 'calendar',
 			header: '麻痹，还不放假！',
@@ -35,14 +38,21 @@ var config = {
 					{
 						symbol: 'calendar-check-o ',
 						url: 'http://cdn.dker.org/0.ics',
-}
+					},
+					//本地日历
+					{
+					symbol: 'birthday-cake',
+					url: 'http://localhost:8080/test.ics',
+					}
 				] 
 			}
 		},
+		//赞美语句模块
 		{
 			module: 'compliments',
 			position: 'lower_third'
 		},
+		//当前温度模块
 		{
 			module: 'currentweather',
 			position: 'top_right',
@@ -51,6 +61,7 @@ var config = {
 	            appid: 'ee1a2d2bfdbb7fd57874be327562a1a7'
 			}
 		},
+		//天气预报模块
 		{
 			module: 'weatherforecast',
 			position: 'top_right',
@@ -60,6 +71,7 @@ var config = {
 	            		appid: 'ee1a2d2bfdbb7fd57874be327562a1a7'
 			}
 		},
+		//新闻订阅模块
 		{
 			module: 'newsfeed',
 			position: 'bottom_bar',
@@ -94,6 +106,7 @@ var config = {
 				showPublishDate: true
 			}
 		},
+		//系统温度模块
 		{
 			module: 'mmm-systemtemperature',
 			position: 'top_center', // This can be any of the regions.
@@ -102,6 +115,7 @@ var config = {
 			    // See 'Configuration options' for more information.
 			}
 		},
+		//空气质量模块
 		{
 			module: 'airquality',
 			position: 'top_center', // you may choose any location
@@ -109,7 +123,7 @@ var config = {
 			  location: 'xian', // the location to check the index for
 			lang:'cn'
 			}
-		},	
+		},
 	]
 
 };
