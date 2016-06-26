@@ -6,12 +6,16 @@
  */
 
 var translations = {
-	"en" : "translations/en.json",
-	"nl" : "translations/nl.json",
-	"de" : "translations/de.json",
-	"fr" : "translations/fr.json",
-	"fy" : "translations/fy.json",
-	"es" : "translations/es.json",
-	"it" : "translations/it.json",
-	"zh-cn" : "translations/zh-cn.json",
+	"en" : "translations/en.json", // English
+	"nl" : "translations/nl.json", // Dutch
+	"de" : "translations/de.json", // German
+	"fr" : "translations/fr.json", // French
+	"fy" : "translations/fy.json", // Frysk
+	"es" : "translations/es.json", // Spanish
+	"nb" : "translations/nb.json", // Norsk bokmål
+	"nn" : "translations/nn.json", // Norsk nynorsk
+	"pt" : "translations/pt.json", // Português
+	"sv" : "translations/sv.json", // Svenska
+	"it" : "translations/it.json", // Italian
+	"zh-cn" : "translations/zh-cn.json",//Chinese
 };

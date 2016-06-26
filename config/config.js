@@ -22,55 +22,67 @@ var config = {
 			//position: 'center',
 			//effect:'flip',
         }
-    },
+    	},
 	//时钟模块
 		{
 			module: 'clock',
 			position: 'top_left'
 		},
-		//日历模块
+	//日历模块
 		{
 			module: 'calendar',
 			header: '麻痹，还不放假！',
 			position: 'top_left',
 			config: {
-				calendars: [
+			calendars: [
 					{
 						symbol: 'calendar-check-o ',
-						url: 'http://cdn.dker.org/0.ics',
+						//url: 'https://calendar.google.com/calendar/ical/zh-cn.china%23holiday%40group.v.calendar.google.com/public/basic.ics',
+					url:'https://calendar.google.com/calendar/ical/zh-cn.china%23holiday%40group.v.calendar.google.com/public/basic.ics'
 					},
-					//本地日历
 					{
-					symbol: 'birthday-cake',
-					url: 'http://localhost:8080/test.ics',
+						symbol: 'birthday-cake',
+						url: 'https://calendar.google.com/calendar/ical/7bobd4kej021kv7tapfhesd1tk%40group.calendar.google.com/private-27a670d15e65672aa530b91690b27f94/basic.ics',
+					},
+						] 
 					}
-				] 
-			}
 		},
-		//赞美语句模块
+		//赞美模块
 		{
 			module: 'compliments',
 			position: 'lower_third'
 		},
-		//当前温度模块
-		{
+		//当前天气模块
+		/*{
 			module: 'currentweather',
 			position: 'top_right',
 			config: {
 				location: 'Xi`an/China',
+				locationID: '1790630',
 	            appid: 'ee1a2d2bfdbb7fd57874be327562a1a7'
 			}
-		},
+		},*/
 		//天气预报模块
 		{
+		        module: 'wuforecast',
+		        position: 'top_right',  // This can be any of the regions.
+		        header: '今天天气不错啊！', 
+		        config: {
+		            // See 'Configuration options' for more information.
+		            location: 'china/xian',
+		            appid: '36c1ffec17586bc1' //wunderground.com API key.
+		        }
+    			},
+		/*{
 			module: 'weatherforecast',
 			position: 'top_right',
 			header: '天气不错啊！',
 			config: {
-			location: 'Xian,CN',
-	            		appid: 'ee1a2d2bfdbb7fd57874be327562a1a7'
+				location: 'Xian,CN',
+				locationID: '1790630',
+	    		appid: 'ee1a2d2bfdbb7fd57874be327562a1a7'
 			}
-		},
+		},*/
 		//新闻订阅模块
 		{
 			module: 'newsfeed',
@@ -124,6 +136,19 @@ var config = {
 			lang:'cn'
 			}
 		},
+		//奇妙清单模块
+		{
+        module: 'MMM-Wunderlist',
+        position: 'top_right',  // This can be any of the regions. Best results in left or right regions.
+        header: '还有好多事要干啊！', // This is optional
+        config: {
+      
+
+			      // See 'Configuration options' for more information.
+			accessToken:'87e0e14a1bcc2c4458183025eb6982ba3487163511fb47c461ed3df5c9f3',
+			clientID:'85f42b903be177f724f7'
+        }
+    	},
 	]
 
 };
