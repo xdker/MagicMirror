@@ -62,7 +62,7 @@ var config = {
 	            appid: 'ee1a2d2bfdbb7fd57874be327562a1a7'
 			}
 		},*/
-		//天气预报模块
+		//天气预报模块，先安装wuforecast模块
 		{
 		        module: 'wuforecast',
 		        position: 'top_right',  // This can be any of the regions.
@@ -136,7 +136,7 @@ var config = {
 			lang:'cn'
 			}
 		},
-		//奇妙清单模块
+		//奇妙清单模块，先安装MMM-Wunderlist模块
 		{
         module: 'MMM-Wunderlist',
         position: 'top_right',  // This can be any of the regions. Best results in left or right regions.
